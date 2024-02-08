@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <header class="navbar">
+        <!-- <div class="container"> -->
+            <h3 class="logo text-center">
+                <span class="cursive-text text-center">Fusion Flare </span> 
+            </h3>
+            <!-- </div> -->
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a href="foods.html">Foods</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <!-- Navbar Section Ends Here -->
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+
+            <form action="#" class="order">
+                <!-- <button onclick="autocall()">button</button> -->
+                <fieldset>
+                    <legend class="text-white">Select Quantity</legend>
+
+                    <!-- <div class="food-menu-img">
+                        <img src="#" alt="" class="img-responsive img-curve">
+                    </div> -->
+    
+                    <div class="food-menu-desc">
+                        <div class="order-label text-center text-white">Select the Quantity of:</div>
+                        <div id="order-title" class="order-title text-white text-center">Food Title</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend class="text-white">Delivery Details</legend>
+                    <div class="order-label text-white">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. Abhijit Biswal" class="input-responsive" required>
+
+                    <div class="order-label text-white">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+                    <div class="order-label text-white">Email</div>
+                    <input type="email" name="email" placeholder="E.g. abhijit@gmail.com" class="input-responsive" required>
+
+                    <div class="order-label text-white">Address</div>
+                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                    <!-- <button ></button> -->
+                    <!-- <a class="btn btn-primary" href="confirm.html">Confirm order</a> -->
+                    <!-- Update the "Confirm Order" button -->
+                    <button class="btn text-center  btn-primary" value="Confirm Order"><a href="ordered.html">Confirm order</a></button>
+
+                    <!-- <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary" > -->
+                </fieldset>
+
+            </form>
+
+        </div>
+    </section>
+    <!-- fOOD sEARCH Section Ends Here -->
+
+    <!-- social Section Starts Here -->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">Abhijit Biswal</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+    <script src="index.js" defer></script>
+</body>
+</html>

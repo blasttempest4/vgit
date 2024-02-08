@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link rel="icon" href="images/mainlogo" type="favicon.io" />
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section Starts Here -->
+    <!-- <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            
+
+            <div class="clearfix"></div>
+        </div>
+    </section> -->
+    <!-- Navbar Section Ends Here -->
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <header class="header">
+      <!-- <h3 class="logo text-left" id="flss">Fusion Flare</h3> -->
+      <div>
+        <h3 class="logo text-center">
+          <span class="cursive-text">Fusion Flare </span>
+        </h3>
+      </div>
+      <div class="menu text-right">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#cat-btn">Categories</a>
+          </li>
+          <li>
+            <a href="#menu-btn">Foods</a>
+          </li>
+          <li>
+            <a href="#contact-btn">Contact</a>
+          </li>
+          <!-- <li>
+                    <a href="#"><img src="images/cart.png" style="height: 40px; margin-top: 15px;" alt="">
+                    </a>
+                </li> -->
+        </ul>
+      </div>
+    </header>
+    <!-- <section class="food-search text-center">
+        <div class="main-container">
+            
+            
+            <form action="food-search.html" method="POST">
+                <input type="search" name="search" placeholder="Search for Food.." required>
+                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            </form>
+        </div>
+        
+    </section> -->
+    <!-- fOOD sEARCH Section Ends Here -->
+
+    <!-- CAtegories Section Starts Here -->
+    <section id="cat-btn" class="categories">
+      <div class="container">
+        <h2 class="text-center" id="Foodss">Explore Our Menu</h2>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/pizza.jpg"
+              alt="Pizza"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="pizza" class="float-text text-white">Pizza</h3>
+          </div>
+        </a>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/burger.jpg"
+              alt="Burger"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="burger" class="float-text text-white">Burger</h3>
+          </div>
+        </a>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/momo.jpg"
+              alt="Momo"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="momo" class="float-text text-white">Momo</h3>
+          </div>
+        </a>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/pasta.jpeg"
+              alt="Pizza"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="pasta" class="float-text text-white">Pasta</h3>
+          </div>
+        </a>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/noodles.avif"
+              alt="noodles"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="noodles" class="float-text text-white">Noodles</h3>
+          </div>
+        </a>
+
+        <a href="#menu-btn">
+          <div class="box-3 float-container">
+            <img
+              src="images/french fries.jpeg"
+              alt="French fries"
+              class="img-responsive img-curve"
+            />
+
+            <h3 id="frenchfries" class="float-text text-white">French Fries</h3>
+          </div>
+        </a>
+
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- Categories Section Ends Here -->
+
+    <!-- fOOD MEnu Section Starts Here -->
+    <h2 style="text-align: center; font-size: 40px; margin-top: 20px">
+      Food Menu
+    </h2>
+
+    <section id="menu-btn" class="food-menu">
+      <div class="container">
+        <!-- <div class="try">
+            <h3 class="text-left">Non Veg</h3>
+            <h3 class="text-right">Veg</h3>
+        </div> -->
+        <div id="1" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-pizza.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle1">Chicken pizza</h4>
+            <p class="food-price" id="foodPrice1">Rs350</p>
+            <p class="food-detail">
+              Made with Indian Sauces, Chicken, and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button1"
+              href="order.html"
+              onclick="displayOrderDetails(1)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="2" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-burger.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle2">Tandoori Paneer Burger</h4>
+            <p class="food-price" id="foodPrice2">Rs350</p>
+            <p class="food-detail">
+              Made with Paneer marinated in tandoori sauce, and organice
+              vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button2"
+              href="order.html"
+              onclick="displayOrderDetails(2)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="3" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-burger.jpg"
+              alt="Classic Chicken Burger"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle3">Smoky Chicken Burger</h4>
+            <p class="food-price" id="foodPrice3">Rs199</p>
+            <p class="food-detail">
+              Made with Chicken marinated in Desi Makhani sauce, and organice
+              vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button3"
+              href="order.html"
+              onclick="displayOrderDetails(3)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="4" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-pizza.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle4">Paneer Overloaded Pizza</h4>
+            <p class="food-price" id="foodPrice4">Rs350</p>
+            <p class="food-detail">
+              Made with Italian Sauce, Paneer, and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button4"
+              href="order.html"
+              onclick="displayOrderDetails(4)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="5" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-momo.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle5">Chicken Steamed Momos</h4>
+            <p class="food-price" id="foodPrice5">Rs300</p>
+            <p class="food-detail">
+              Filled with juicy chicken and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button5"
+              href="order.html"
+              onclick="displayOrderDetails(5)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="6" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/menu-momo.jpg"
+              alt="Grilled Cheese Momo"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle6">Paneer Steamed Momo</h4>
+            <p class="food-price" id="foodPrice6">Rs199</p>
+            <p class="food-detail">
+              Filled with soft paneer and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button6"
+              href="order.html"
+              onclick="displayOrderDetails(6)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="container">
+        <!-- <h2 class="text-center">Food Menu</h2> -->
+
+        <div id="7" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/BBQ-Wings-Overhead.jpg"
+              alt="Chicken Wings"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle7">Chicken Wings</h4>
+            <p class="food-price" id="foodPrice7">Rs350</p>
+            <p class="food-detail">
+              Made with Indian Sauces, Chicken, and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button7"
+              href="order.html"
+              onclick="displayOrderDetails(7)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="8" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/Paneer-Tikka-1.jpg"
+              alt="Paneer Tikka "
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle8">Paneer Tikka</h4>
+            <p class="food-price" id="foodPrice8">Rs350</p>
+            <p class="food-detail">
+              Made with Paneer marinated in tandoori sauce, and organice
+              vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button8"
+              href="order.html"
+              onclick="displayOrderDetails(8)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="9" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/cknbbq.jpeg"
+              alt="Classic Chicken Burger"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle9">Smoked barbequed Chicken</h4>
+            <p class="food-price" id="foodPrice9">Rs199</p>
+            <p class="food-detail">
+              Made with Chicken marinated in Desi Makhani sauce, and organice
+              vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button9"
+              href="order.html"
+              onclick="displayOrderDetails(9)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="10" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/taco.jpeg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle10">Grilled Paneer Taco</h4>
+            <p class="food-price" id="foodPrice10">Rs350</p>
+            <p class="food-detail">
+              Made with Italian Sauce, Paneer, and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button10"
+              href="order.html"
+              onclick="displayOrderDetails(10)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="11" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/Chilli-Lime-Grilled-Prawns-02.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle11">Grilled Prawns</h4>
+            <p class="food-price" id="foodPrice11">Rs300</p>
+            <p class="food-detail">
+              Filled with juicy chicken and organice vegetables.
+            </p>
+            <br />
+
+            <a
+              id="button11"
+              href="order.html"
+              onclick="displayOrderDetails(11)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+
+        <div id="12" class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="images/grilled-mushrooms.jpg"
+              alt="Grilled Cheese Momo"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4 id="foodTitle12">Grilled Mushrooms</h4>
+            <p class="food-price" id="foodPrice12">Rs199</p>
+            <p class="food-detail">
+              Made with Gucci mushrooms marinated in sweet chilly sauce.
+            </p>
+            <br />
+            <a
+              id="button12"
+              href="order.html"
+              onclick="displayOrderDetails(12)"
+              class="btn btn-primary"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <!-- fOOD Menu Section Ends Here -->
+    <!--CONTACTS section starts here-->
+    <section id="contact-btn" class="contacts">
+      <div class="container">
+        <h2 class="text-center" id="coontact">Contact us</h2>
+        <span class="text-white" style="font-weight: bold; font-size: larger"
+          >Manager-Aastha</span
+        >
+        <span class="text-white">Ph-12345687</span>
+        <br />
+        <span class="text-white" style="font-weight: bold; font-size: larger"
+          >Executive-Aditya Bg</span
+        >
+        <span class="text-white">Ph-12345687</span>
+        <br />
+        <span class="text-white" style="font-weight: bold; font-size: larger"
+          >Director -Abhijit</span
+        >
+        <span class="text-white" class="text-white">Ph-12345687</span>
+        <br />
+        <div class="clearfix"></div>
+      </div>
+    </section>
+
+    <!-- social Section Starts Here -->
+    <section class="social">
+      <div class="container text-center">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAD_6y5UBKwZqfEBR3CNmL7Rx94ItLiIGHPk&keywords=abhijit%20biswal&origin=RICH_QUERY_SUGGESTION&position=0&searchId=00b1858a-3c83-47db-b35b-7462a9c815ad&sid=bfd&spellCorrectionEnabled=false"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEUAd7X///8Ac7NGlMRGk8QAdrUAbLAAbrDZ7PXV6fPy+fw9ir/p9Pkugbo0hr3D2umz0ORUnMh3q9C72eplocoIe7dsps6dxN6lyeCDs9TL4u+WwNzg7vVTmMYhg7uy1OcLxWtDAAABaklEQVRIie3W7Y6CMBAFUBxohwIK8qEIgu//lltou7TortNu9p83MRGSIzgzlEaHwETyU51jr5wrBWsODDzCgNcLrHjkHV5JOIE/hEnCOATGEiYhMHGgLBELgdi1lxlJ1IH8uvS17CjShtiriRCekM1mlm7oBaE2sCEMhA1vBg5+kCUG9n63GmGqXJYTqmNDlhcrrAkXdPsIx3FI+4TidpPDkHNOm7ndrP6U9TH/5VZxDewPsEvaS5t0CK8h9qXKSd4tq9T3EaC73rOl2EVp/X0bcqcddzMMU7YtbFuHHShsqH+lnJwlsUIqFIW7mLZAhPuYOfaGh5nR4fBotgLVQIWik+PE+11h38NCLUGmV+Ypfw9HdQU0j/lAhfr9AKafggizXHc81/VJibA4qvKzk4HE4nzgB/4jfLU8UiA26RqxQn0wfEOhTjTPMEIdZh9EOsw9QXzpPOdvMHgTGLztDN7oBm+twzfzYfkCChobmnKthiYAAAAASUVORK5CYII="
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/fluent/48/000000/instagram-new.png"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="https://img.icons8.com/fluent/48/000000/twitter.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+      <div class="container text-center">
+        <p>
+          All rights reserved. Designed By <a href="#">Abhijit,Aastha,Aditya</a>
+        </p>
+      </div>
+    </section>
+    <!-- footer Section Ends Here -->
+    <script src="index.js"></script>
+  </body>
+</html>
